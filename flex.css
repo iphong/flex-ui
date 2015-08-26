@@ -1,0 +1,162 @@
+/*!
+ * FlexLayout v1.0.0
+ * Written by Phong Vu
+ * Email: phong.vu@me.com
+ * https://github.com/iphong
+ * Licensed under MIT (https://github.com/iphong/flex-ui/edit/master/LICENSE)
+ */
+
+/* Display element as a flex box */
+.flex {
+	display: -webkit-flex !important;
+	-webkit-align-items: center;
+	-webkit-align-content: center;
+	-webkit-justify-content: center;
+
+	display: flex !important;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+
+	min-width: 0;
+	min-height: 0;
+}
+/* Flex flow (default: horizontal) */
+.flex,
+.flex-row,
+.flex-horizontal {
+	-webkit-flex-flow: row nowrap;
+	flex-flow: row nowrap;
+}
+.flex-column,
+.flex-vertical {
+	-webkit-flex-flow: column nowrap;
+	flex-flow: column nowrap;
+}
+
+.flex.hidden {
+	display: none !important;
+}
+
+/* flex box content horizontal alignment */
+.flex.align-left {
+	-webkit-justify-content: flex-start;
+	justify-content: flex-start;
+}
+.flex.align-center {
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+.flex.align-right {
+	-webkit-justify-content: flex-end;
+	justify-content: flex-end;
+}
+.flex.align-top {
+	-webkit-align-items: flex-start;
+	align-items: flex-start;
+}
+.flex.align-middle {
+	-webkit-align-items: center;
+	align-items: center;
+}
+.flex.align-bottom {
+	-webkit-align-items: flex-end;
+	align-items: flex-end;
+}
+
+/* flex box content vertical alignment */
+.flex.flex-column.align-top,
+.flex.flex-vertical.align-top {
+	-webkit-justify-content: flex-start;
+	justify-content: flex-start;
+}
+.flex.flex-column.align-middle,
+.flex.flex-vertical.align-middle {
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+.flex.flex-column.align-bottom,
+.flex.flex-vertical.align-bottom {
+	-webkit-justify-content: flex-end;
+	justify-content: flex-end;
+}
+.flex.flex-column.align-left,
+.flex.flex-vertical.align-left {
+	-webkit-align-items: flex-start;
+	align-items: flex-start;
+}
+.flex.flex-column.align-center,
+.flex.flex-vertical.align-center {
+	-webkit-align-items: center;
+	align-items: center;
+}
+.flex.flex-column.align-right,
+.flex.flex-vertical.align-right {
+	-webkit-align-items: flex-end;
+	align-items: flex-end;
+}
+/* flex box content spacing alignment */
+.flex.space-around {
+	-webkit-justify-content: space-around;
+	justify-content: space-around;
+}
+.flex.space-between {
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+}
+
+/* flex box layout */
+.flex.flex-layout {
+	-webkit-align-items: stretch;
+	align-items: stretch;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+}
+
+/* Default flex box item */
+.flex > * {
+	-webkit-flex: 0 0 auto;
+	flex: 0 0 auto;
+}
+.flex > .flexible,
+.flex > .flex-flexible {
+	-webkit-flex: 1 1 auto;
+	flex: 1 1 auto;
+}
+.flex.flex-grid > *,
+.flex.flex-grid > .flex-1 {
+	flex-basis: calc(100% / 12);
+}
+.flex.flex-grid > .flex-2 {
+	flex-basis: calc(100% / 12 * 2);
+}
+.flex.flex-grid > .flex-3 {
+	flex-basis: calc(100% / 12 * 3);
+}
+.flex.flex-grid > .flex-4 {
+	flex-basis: calc(100% / 12 * 4);
+}
+.flex.flex-grid > .flex-5 {
+	flex-basis: calc(100% / 12 * 5);
+}
+.flex.flex-grid > .flex-6 {
+	flex-basis: calc(100% / 12 * 6);
+}
+.flex.flex-grid > .flex-7 {
+	flex-basis: calc(100% / 12 * 7);
+}
+.flex.flex-grid > .flex-8 {
+	flex-basis: calc(100% / 12 * 8);
+}
+.flex.flex-grid > .flex-9 {
+	flex-basis: calc(100% / 12 * 9);
+}
+.flex.flex-grid > .flex-10 {
+	flex-basis: calc(100% / 12 * 10);
+}
+.flex.flex-grid > .flex-11 {
+	flex-basis: calc(100% / 12 * 11);
+}
+.flex.flex-grid > .flex-12 {
+	flex-basis: calc(100% / 12 * 12);
+}
